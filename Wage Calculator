@@ -1,0 +1,39 @@
+def main():
+# Input your name
+  user = str(input("Enter your name."))
+# Calculate the wage for hourly work.
+def hourly_wage(hourly_pay,work_hours):
+  hourly_pay = float(input("Enter your hourly pay."))
+  work_hours = int(input("How many hours have you worked?"))
+  pre_tax = hourly_pay * work_hours
+  return pre_tax
+  state_select()
+# State taxes
+state_taxes = {
+  'VA':0.04,
+  'MD':0.04,
+  'PA':0.0307
+}
+# Select state
+def state_select():
+  state = input("Enter the abreviation for the state you work in.")
+  if state.upper() == key in state_taxes:
+    # Return the % acording to the state selected.
+    return value in state_taxes
+    calc_stateTax()
+  else:
+    print("I'm sorry that is not a selectable state.") 
+# Calculate wage after State Taxes
+def calc_stateTax(state_taxes,pre_tax):
+  post_stateTax = state_taxes - pre_tax
+  return post_stateTax
+  calc_fedTax()
+# Calculate wage after %12 federal tax
+def calc_fedTax(post_stateTax,fed_tax):
+  fed_tax = 0.012
+  post_tax = post_stateTax - fed_tax
+  return post_tax
+  print(f'$' + {post_tax} + " is your net income " +{user} + "!")
+
+
+main()
